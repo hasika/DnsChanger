@@ -1,0 +1,45 @@
+{
+  "name": "change-dns-via-menubar",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "is-admin": "latest",
+    "network": "latest",
+    "node-cmd": "latest",
+    "node_dns_changer": "^1.1.4",
+    "shelljs": "latest",
+    "electron-util": "^0.14.0"
+  },
+  "devDependencies": {
+    "electron": "^8.0.3",
+    "electron-builder": "^22.4.0"
+  },
+  "build": {
+    "buildVersion": "0",
+    "appId": "ir.alirezaj.dnschanger",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "gatekeeperAssess": false,
+      "hardenedRuntime": true,
+      "target": [
+        "zip"
+      ],
+      "darkModeSupport": true,
+      "extendInfo": {
+        "LSUIElement": 1,
+        "NSUserNotificationAlertStyle": "alert"
+      }
+    },
+    "appx": {
+      "displayName": "DnsChanger",
+      "identityName": "234554MrJosh.DnsChanger",
+      "applicationId": "MrJosh.DnsChanger",
+      "publisherDisplayName": "Alireza Josheghani"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build-app": "electron-builder"
+  }
+}
