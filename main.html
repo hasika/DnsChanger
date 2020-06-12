@@ -1,5 +1,6 @@
 <!-- index.html -->
 <script>
+    
     const { remote } = require('electron')
     const { Menu, MenuItem } = remote
 
@@ -12,4 +13,5 @@
         e.preventDefault()
         menu.popup({ window: remote.getCurrentWindow() })
     }, false)
+
 </script>

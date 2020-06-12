@@ -1,7 +1,19 @@
 {
   "name": "change-dns-via-menubar",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "main.js",
+  "productName": "DnsChanger",
+  "description": "Change your dns from your menubar with one click!",
+  "author": {
+    "name": "Alireza Josheghani",
+    "email": "josheghani.dev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrJoshLab/DnsChanger.git"
+  },
+  "homepage": "https://github.com/MrJoshLab/DnsChanger",
+  "license": "MIT",
   "dependencies": {
     "app-root-path": "^3.0.0",
     "is-admin": "latest",
@@ -40,6 +52,6 @@
   },
   "scripts": {
     "start": "electron .",
-    "build-app": "electron-builder"
+    "build": "electron-builder"
   }
 }

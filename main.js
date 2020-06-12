@@ -80,9 +80,9 @@ app.on('ready', () => {
                     }
                 },
                 {
-                    label: 'Open github page!',
+                    label: 'Open github source page!',
                     click: () => {
-                        shell.openExternal('https://github.com/MrJoshLab');
+                        shell.openExternal('https://github.com/MrJoshLab/DnsChanger');
                     }
                 }
             ]
