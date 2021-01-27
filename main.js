@@ -2,7 +2,7 @@ const { app, Menu, Tray, shell } = require('electron');
 
 let servers = require("./dns_servers.json");
 const electronUtils = require('electron-util');
-const dns_changer = require('node_dns_changer');
+const dns_changer = require('./lib/changer');
 const { resolve: resolvePath } = require('app-root-path');
 
 let domain_name_servers = [
@@ -45,7 +45,7 @@ app.on('ready', () => {
     electronUtils.enforceMacOSAppLocation();
 
     app.name = 'DNS Changer';
-    app.dock.hide();
+    // app.dock.hide();
 
     let tray;
 
